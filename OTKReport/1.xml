@@ -1,0 +1,61 @@
+<TableRow>
+                                <TableCell RowSpan="3">
+                                    <Paragraph>
+                                        “ÂıÔÓ„ÓÌ, ‰ÂÌ¸ 3
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell RowSpan="3">
+                                    <Paragraph>
+                                        <Run x:Name="run4_date" x:FieldModifier="public"/>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        œ√—1
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Run x:Name="run4_conc1" x:FieldModifier="public"/>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Run x:Name="run4_test1" x:FieldModifier="public"/>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        œ√—3
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Run x:Name="run4_conc2" x:FieldModifier="public"/>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Run x:Name="run4_test2" x:FieldModifier="public"/>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        œ√—1
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Run x:Name="run4_conc3" x:FieldModifier="public"/>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Run x:Name="run4_test3" x:FieldModifier="public"/>
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{514D1538-48D7-4D74-9FD0-78FCA746449E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MIL82Gui</RootNamespace>
+    <AssemblyName>gui</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v12.1">
+      <HintPath>DevExpress\DevExpress.Data.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v12.1.Core">
+      <HintPath>DevExpress\DevExpress.Printing.v12.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.1">
+      <HintPath>DevExpress\DevExpress.Utils.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v12.1">
+      <HintPath>DevExpress\DevExpress.XtraBars.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v12.1">
+      <HintPath>DevExpress\DevExpress.XtraEditors.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v12.1">
+      <HintPath>DevExpress\DevExpress.XtraGrid.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v12.1">
+      <HintPath>DevExpress\DevExpress.XtraLayout.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v12.1">
+      <HintPath>DevExpress\DevExpress.XtraTreeList.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v12.1">
+      <HintPath>DevExpress\DevExpress.XtraVerticalGrid.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormK31.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormK31.designer.cs">
+      <DependentUpon>FormK31.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIL82MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIL82MainForm.designer.cs">
+      <DependentUpon>MIL82MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyInputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyInputBox.designer.cs">
+      <DependentUpon>MyInputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PInvokeTypes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="winapi.cs" />
+    <EmbeddedResource Include="FormK31.resx">
+      <DependentUpon>FormK31.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIL82MainForm.resx">
+      <DependentUpon>MIL82MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyInputBox.resx">
+      <DependentUpon>MyInputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons\1357151429_Play1Normal.png" />
+    <Content Include="Icons\1357153549_player_stop.png" />
+    <Content Include="Icons\1357153615_22930.ico" />
+    <Content Include="Icons\1357153632_Play1Hot.png" />
+    <Content Include="Icons\1357154663_Stop1NormalRed.png" />
+    <Content Include="Icons\1357154752_Stop1NormalRed.png" />
+    <Content Include="Icons\1357154792_Play1Hot.png" />
+    <Content Include="Icons\1357155342_Play1Hot.png" />
+    <Content Include="Icons\1357155469_Stop1NormalRed.png" />
+    <Content Include="Icons\1357155643_Stop1NormalRed.png" />
+    <Content Include="Icons\1359464236_cog-icon-2-48x48.png" />
+    <Content Include="Icons\1360089248_label_new yellow.png" />
+    <Content Include="Icons\1360929611_player_pause.png" />
+    <Content Include="Icons\1361281565_Line-chart.png" />
+    <Content Include="Icons\1368454280_edit-clear.png" />
+    <Content Include="Icons\20120912195948!Icon_Mathematical_Plot.png" />
+    <Content Include="Icons\32.png" />
+    <Content Include="Icons\Action-view-icon-icon.png" />
+    <Content Include="Icons\Actions-office-chart-line-stacked-icon.png" />
+    <Content Include="Icons\addDev.png" />
+    <Content Include="Icons\Document-icon.png" />
+    <Content Include="Icons\Document-icon1.png" />
+    <Content Include="Icons\File-Types-Other-fonts-icon.png" />
+    <Content Include="Icons\Files-icon.png" />
+    <Content Include="Icons\gas_lighter.ico" />
+    <Content Include="Icons\graph_add.png" />
+    <Content Include="Icons\Icon_Mathematical_Plot%282%29.png" />
+    <Content Include="Icons\Icon_Mathematical_Plot.png" />
+    <Content Include="Icons\Letter-X-blue-icon.png" />
+    <Content Include="Icons\Letter-Y-blue-icon.png" />
+    <Content Include="Icons\Line-Chart-icon.png" />
+    <Content Include="Icons\old_zoom_best_fit.png" />
+    <Content Include="Icons\plus-icon.png" />
+    <Content Include="Icons\readKefs48.png" />
+    <Content Include="Icons\remDev.png" />
+    <Content Include="Icons\Settings%282%29.ico" />
+    <Content Include="Icons\Step-Forward-Normal-icon.png" />
+    <Content Include="Icons\writeKefs48.png" />
+    <Content Include="Icons\X-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
