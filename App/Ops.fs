@@ -552,7 +552,7 @@ let docalc3 (k : Var.Kefs list)  (grp:Var.Grp) (var1:Var.DevVal) (var2:Var.DevVa
                 let! y2    = grp, var2 |> Var.Val,  1, ndev
                                 
                 let x = [| x0; x1; x2 |]
-                let y = [| -y0; -y1; -y2 |]
+                let y = [| y1 - y0; 0; y1 - y2 |]
                 let kv = 
                     mynumeric.GaussInterpolation.calculate(x, y)
                     |> Array.map round6 |> Array.toList
