@@ -273,7 +273,7 @@ let setFilenName fileName =
     my.safelyWinForm form ( fun() ->
         let relPath = my.relativePath dataPath fileName
         log.Info( relPath )
-        form.Text <- "Версия 1.01. Настройка ИК датчиков ГАММА-100. "+my.relativePath dataPath fileName
+        form.Text <- "Версия 1.02. Настройка ИК датчиков ГАММА-100. "+my.relativePath dataPath fileName
         guiSets.FileName <- fileName )
 
 let setNewFileName() = 

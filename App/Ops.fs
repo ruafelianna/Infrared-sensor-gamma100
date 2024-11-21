@@ -716,7 +716,7 @@ let termo =
                 yield Scn.simpleHidden <| fun () ->
                     sleep 5000
                     Scn.Complete
-                yield testConcTask Var.Test_Termo0 0 Pneumo.K1 0.2
+                yield testConcTask Var.Test_Termo0 0 Pneumo.K1 1
                 yield blowGas Pneumo.K4
                 yield fixE Var.TermoE 1
 
@@ -726,7 +726,7 @@ let termo =
                     [   yield! docalc3 [Var.Kefs.A0; Var.Kefs.A1; Var.Kefs.A2] Var.Termo0 Var.Tk Var.Var1
                         yield! docalc4 [Var.Kefs.B0_T; Var.Kefs.B1_T; Var.Kefs.B2_T] Var.TermoE Var.Termo0 Var.Tk Var.Var4 Var.Var1  ]
 
-                yield testConcTask Var.Test_TermoE 0 Pneumo.K4 0.2 
+                yield testConcTask Var.Test_TermoE 0 Pneumo.K4 1
                 yield Scn.foreachHidden <| fun ndev ->
                     Var.setValN (DateTime.Now.ToString("dd MMMM yyyy HH:mm")) Var.Grp.Test_Date (Var.Val( Var.TestDate )) 0 ndev
                     Scn.Complete
