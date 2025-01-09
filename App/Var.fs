@@ -208,6 +208,9 @@ type Kefs =
     |   [<Description("Коэффициент чувствительности термометра ДВ")>] 
         [<KNum(32us)>]   
         Ktw
+    |   [<Description("Напряжение термометра ДВ при настройке в НКУ")>]
+        [<KNum(33us)>]
+        UtwSet
 
     |   [<Description("Коэффициент функции термокомпенсации ухода нуля МК")>] 
         [<KNum(4us)>]   
@@ -670,7 +673,7 @@ module Kind =
             yield D.D33, NO, GpM3, Scale2,    10
             yield D.D34, NO, GpM3, Scale1,    10
             yield D.D35, NO2, GpM3, Scale2,    5
-            yield D.D36, NO2, GpM3, Scale1,    5
+            yield D.D36, NO, GpM3, Scale1,     5
 
             yield D.D37, SO2, GpM3, Scale2,    10
             yield D.D38, SO2, GpM3, Scale5,    7
